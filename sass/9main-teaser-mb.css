@@ -220,6 +220,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
+  max-width: 65vw;
 }
 
 .offcanvas .btn-close {
