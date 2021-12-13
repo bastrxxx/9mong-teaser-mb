@@ -1,0 +1,237 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+$fontfam: 'Montserrat', Roboto, sans-serif;
+$fontfam2: 'Arima Madurai', Roboto, sans-serif;
+@import 'effect';
+@import 'embed';
+:root {
+  --color1: #21569e;
+  --color2: #333333;
+  --color3: #808080;
+  --colorok: #31da70;
+  --colorerror: #ff6d6d;
+  --whitecolor: #fff;
+  --colorlink: #409ff5;
+  --spacing: 30px;
+  --colortablehead: #e4e4e4;
+  --bs-gutter-x: 1.5rem;
+}
+.error {color: var(--colorerror) !important;}
+.green {color: var(--colorok) !important;}
+.gold {color: var(--color1) !important;}
+.blue {color: var(--colorlink) !important;}
+.main {color: var(--color1) !important;}
+body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position: top center, bottom center;}
+* {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
+a {text-decoration: none;transition: all 0.3s ease-in-out;}
+button {transition: all 0.7s ease-in-out !important;}
+a:hover {text-decoration: none;}
+main {position: relative;height: 100vh;}
+.container{max-width: 640px;}
+.wrapper {margin: 0 auto;position: relative;width:100%;}
+// #layout{width: 1920px;height:auto;transform-origin: top left;overflow: hidden;}
+.btnlist{text-align: center;z-index: 15;left: 0;top:10px;color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;
+  i{font-size: 2rem;text-align: left;}
+}
+.offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.webp);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;
+  .btn-close{filter: invert(1);}
+  .offcanvas-body{
+    .list-group{
+      .list-group-item{background: transparent;border-color:rgba(255,255,255,0.1);border-style: dotted;
+        a{color: var(--whitecolor);font-size: 1.1rem;
+          &:focus{color: var(--color1);}
+          i{width: 1rem;text-align: center;}
+        }
+      }
+    }
+  }
+}
+/*=Header=*/
+.header {position: relative;height: auto;
+  ul.menu-top{display: flex;position: absolute;z-index: 11;top:7px;right: 10px;list-style: none;align-items: center;justify-content: center;grid-gap:10px;
+    li{
+      a{display: flex;width: 42px;height: 42px;font-size: 1.3rem;align-items: center;justify-content: center;background:#28829e;color: var(--whitecolor);
+        &:hover{filter: brightness(120%);}
+      }
+    }
+  }
+
+  .header-center{z-index: 9;position: relative;display: flex;align-items:center;justify-content: center;flex-direction: column;
+    .btnvideo{width: 100%;
+      img{max-width: 100%;}
+    }
+    a.naptien{position: relative;max-width: 100%;margin: 0 auto;display: block;
+      img{max-width: 100%;}
+      .light{position:absolute;top:0;left:0;z-index:2;overflow:hidden;-webkit-filter:brightness(2);filter:brightness(2);-webkit-mask-size:300% 200%;mask-size:300% 200%;-webkit-mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 30%,#fff 50%,rgba(255,255,255,0) 60%);mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 40%,#fff 50%,rgba(255,255,255,0) 60%);-webkit-animation:laluot linear 2.5s infinite 1s;animation:laluot linear 2.5s infinite 1s;}
+    }
+  }
+}
+
+/*==Dangkynhanqua*/
+.dangkynhanqua{position: relative;z-index: 2;
+  .container{
+    .top-dk{width: 100%;
+      h4.dadangky{background: url(../images/bg-dadangky.png) no-repeat top center;width: var(--per);height:calc(var(--per) / 5);display: flex;justify-content: center;align-items: center;font-weight: 700;color: var(--color1);cursor:default;background-size: contain;--per:380px;max-width: 380px;
+        &:hover{filter: brightness(100%);}
+        span.luotdk{color: #2045c2;}
+      }
+      ul{list-style: none;display: flex;justify-content: center;grid-gap: 25px;
+        li{
+          a{
+            &:hover{filter: brightness(120%);}
+            img{max-width: 100%;}
+          }
+        }
+      }
+    }
+    .mocdat{width: 100%;height: auto;position: relative;
+      .cacmoc{width: 100%;position: relative;
+        ul{list-style: none;
+          li{
+            a.btn{position:absolute;}
+          }
+        }
+        img{max-width: 100%;display: block;margin: 0 auto;}
+        .moc{display: none;}
+        .active{display: block;}
+      }
+    }
+  }
+}
+
+/*==Vongquay====*/
+.vongquay{height: auto;position: relative;overflow: hidden;z-index: 2;
+  .container{display: flex;
+    .title-vqmm{max-width: 100%;}
+    .logined{
+      ul{display: flex;align-items: center;justify-content: center;list-style: none;grid-gap:20px;font-weight: 500;font-family: $fontfam2;font-size: 110%;
+        .username{font-weight: 700;color: var(--color1);}
+        a.logout{color: var(--color2);}
+      }
+    }
+    .vongquay-main{position: relative;max-width: 100%;height: auto;z-index: 2;align-items: center;justify-content: center;overflow: hidden;
+      .bgvqmm{position: relative;z-index: 1;
+        img{max-width: 100%;}
+      }
+      .khungngoai{position:absolute;top: 0;left: 0;z-index: 4;max-width: 100%;
+        img{max-width: 100%;}
+      }
+      .items{
+        ul{list-style: none;
+          li{position:absolute;top: 0;left: 0;z-index: 3;
+            img{max-width: 100%;}
+            .show{z-index: 3;position:absolute;top: 0;left: 0;visibility: hidden;}
+          }
+          li.on{
+            .show{visibility: visible;}
+          }
+        }
+      }
+      #go1{position:absolute;z-index: 56;top: 0px;left: 0px;
+        a{text-align: center;display:block;
+          img{max-width: 100%;}
+          .soluot{position: absolute;top:52%;color: #fde2bd;font-size: 20px;font-family: $fontfam2;font-weight:900;left:50%;width:auto;text-align: center;margin-left: -34px;}
+          &:hover{filter: brightness(120%);}
+          &:focus{transform: translateY(2px);}
+        }
+      }
+    }
+    .frame-ls{max-width: 100%;height:auto;
+      .btn2{grid-gap:20px;display: flex;grid-gap:10px;justify-content: center;align-items: center;
+        a{
+          img{max-width: 100%;}
+          &:hover{filter: brightness(120%);}
+        }
+      }
+      .showlichsu{background:url(../images/vongquay/bg-phanthuong.webp) no-repeat top center;max-width: 100%;height: auto;background-size:contain;
+        .showin{padding: 0.8rem;max-width: 100%;overflow: hidden;
+          .table-ls{border-radius:10px;background: rgb(147,43,47);height: 93vw;background:transparent;overflow: hidden;overflow-y: scroll;max-height:616px;
+            table{color: #fff;
+              thead{color: #fbe9aa;}
+              tr{border-color:#e0605c;}
+            }
+          }
+        }
+      }
+      p{font-family: $fontfam2;color: #851715;margin-top: 1rem;font-weight:800;}
+      .bot-ls{display: flex;grid-gap:10px;justify-content: center;align-items: center;
+        a{
+          img{max-width: 100%;}
+          &:hover{filter: brightness(120%);}
+        }
+      }
+
+    }
+  }
+}
+.style1::-webkit-scrollbar-track{border-radius: 10px;background-color:transparent;}
+.style1::-webkit-scrollbar{width: 6px;background-color: #7a272b;}
+.style1::-webkit-scrollbar-thumb{border-radius: 10px;background-color: #e0605c;}
+.style2::-webkit-scrollbar-track{border-radius: 10px;background-color:transparent;}
+.style2::-webkit-scrollbar{width: 6px;background-color: #e1d0bc31;}
+.style2::-webkit-scrollbar-thumb{border-radius: 10px;background-color: #b4957d;}
+/*==SLIDER==*/
+.slider{height: calc(100% + 50px);position: relative;z-index: 2;max-width: 100%;overflow: hidden;
+  .sliderin{
+    .title-slide{max-width: 100%;}
+    .swiper-container {width: 100%;overflow: inherit;
+      .swiper-slide{max-width: 100%;
+        img{max-width: 100%;}
+      }
+    }
+  }
+}
+/*==CHUYENTRANG=*/
+#list-example{
+
+}
+/*=POPUP DANGKYSOM=*/
+.modal-custom{
+  .modal-content{
+    .modal-header{
+      h4{color: #db7438;font-weight: 700;text-transform: uppercase;}
+    }
+    .modal-body{
+      .content-dksom{text-align: center;
+        h4{color: #db7438;}
+        input{border:2px solid #e29259;color: #e29259;background: transparent;width:70%;margin: 0 auto;}
+        p{line-height: 1.6;font-weight: 500;color: #91332e;}
+        table{line-height: 1.6;font-weight: 500;color: #91332e;}
+        .btn-dangky{width: 70%;margin: 0 auto;background:#db7438;color: white;font-weight: 700;font-size: 24px;margin-top:1.5rem;}
+      }
+    }
+  }
+}
+
+
+
+/*==FOOTER=*/
+.footer{height:auto;display: flex;align-items: center;justify-content: center;z-index: 2;
+  .footer-content{display: flex;flex-direction: column;align-items: center;justify-content: center;
+    p{line-height: 1.4;font-weight: 500;text-align: center;margin-bottom: 0.4rem;}
+  }
+}
+
+
+@media (max-width: 1024px) {
+  /*	footer{position: relative;}*/
+}
+
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 540px) {
+  
+}
+@media (max-width: 414px) {
+  body{background-size: 140%, 180%;}
+  .header .header-center a.naptien{max-width: 60%;}
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{width: 16px;}
+  .dangkynhanqua .container .top-dk h4.dadangky{--per:280px;}
+  .footer .footer-content p{font-size: 12px;}
+  .vongquay .container .vongquay-main #go1 a .soluot{font-size: 95%;left: 52.5%;}
+}
+@media (max-width: 320px) {
+  .dangkynhanqua .container .top-dk h4.dadangky{--per:220px;font-size: 16px;}
+  body{background-size: 140%, 250%;}
+}
