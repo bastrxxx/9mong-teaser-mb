@@ -216,6 +216,7 @@
 					<ul class="list-group list-group-flush" id="">
 						<li class="list-group-item py-3"><img class="d-block mx-auto mw-100" src="images/icongames.png" alt="" /></li>
 						<li class="list-group-item py-3"><a href="javascript:void(0)" class="nav1" data-bs-dismiss="offcanvas" ><i class="fa fa-home me-2" aria-hidden="true"></i>Trang chủ</a></li>
+						<li class="list-group-item py-3"><a href="javascript:void(0)" class="nav4" data-bs-dismiss="offcanvas" ><i class="fa fa-gift me-2" aria-hidden="true"></i>Đăng ký sớm</a></li>
 						<li class="list-group-item py-3"><a href="javascript:void(0)" class="nav2" data-bs-dismiss="offcanvas" ><i class="fa fa-tachometer me-2" aria-hidden="true"></i>Vòng quay</a></li>
 						<li class="list-group-item py-3"><a href="javascript:void(0)" class="nav3" data-bs-dismiss="offcanvas" ><i class="fa fa-star me-2" aria-hidden="true"></i>Tính năng</a></li>
 					</ul>
@@ -239,7 +240,7 @@
 			<!----Đăng ký nhận quà-->
 			<div class="dangkynhanqua mt-4">
 				<div class="container p-0">
-					<div class="top-dk col-12">
+					<div class="top-dk col-12" id="list-item-4">
 						<h4 class="dadangky mx-auto mb-3">Đã đăng ký <span class="luotdk ms-2">17,291</span></h4>
 						<ul class="px-3 m-0">
 							<li><a href="#"  data-bs-toggle="modal" data-bs-target="#thele"><img src="images/btn-thele.png" alt=""/></a></li>
@@ -483,6 +484,11 @@
 			$(".nav3").click(function() {
 				$('html, body').animate({
 					scrollTop: $("#list-item-3").offset().top
+				}, 500);
+			});
+			$(".nav4").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#list-item-4").offset().top
 				}, 500);
 			});
 		});
