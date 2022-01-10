@@ -15,13 +15,15 @@ $fontfam2: 'Arima Madurai', Roboto, sans-serif;
   --spacing: 30px;
   --colortablehead: #e4e4e4;
   --bs-gutter-x: 1.5rem;
+  --ratio:1;
 }
 .error {color: var(--colorerror) !important;}
 .green {color: var(--colorok) !important;}
 .gold {color: var(--color1) !important;}
 .blue {color: var(--colorlink) !important;}
 .main {color: var(--color1) !important;}
-body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position: top center, bottom center;}
+#layout{margin-top: calc(116px * var(--ratio));}
+body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position:center calc(116px * var(--ratio)), bottom center;}
 * {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
 a {text-decoration: none;transition: all 0.3s ease-in-out;}
 button {transition: all 0.7s ease-in-out !important;}
@@ -30,7 +32,7 @@ main {position: relative;height: 100vh;}
 .container{max-width: 640px;}
 .wrapper {margin: 0 auto;position: relative;width:100%;}
 // #layout{width: 1920px;height:auto;transform-origin: top left;overflow: hidden;}
-.btnlist{text-align: center;z-index: 15;left: 0;top:10px;color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;
+.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;
   i{font-size: 2rem;text-align: left;}
 }
 .offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.webp);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;max-width:65vw;
@@ -63,6 +65,22 @@ main {position: relative;height: 100vh;}
     a.naptien{position: relative;max-width: 100%;margin: 0 auto;display: block;
       img{max-width: 100%;}
       .light{position:absolute;top:0;left:0;z-index:2;overflow:hidden;-webkit-filter:brightness(2);filter:brightness(2);-webkit-mask-size:300% 200%;mask-size:300% 200%;-webkit-mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 30%,#fff 50%,rgba(255,255,255,0) 60%);mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 40%,#fff 50%,rgba(255,255,255,0) 60%);-webkit-animation:laluot linear 2.5s infinite 1s;animation:laluot linear 2.5s infinite 1s;}
+    }
+  }
+}
+/*===DOWNLOAD DETECH========*/
+.download{background-color: #2d648d;border-bottom: 1px solid #ffffff80;
+  .container{display: flex;justify-content: space-between;align-items: center;
+    .left{display: flex;align-items: center;
+      .icongame{width:calc(100px * var(--ratio));}
+      .title-game{color: var(--whitecolor);
+        h4{font-size:calc(160% * var(--ratio));}
+      }
+    }
+    .right{
+      a{
+        img{width:calc(172px * var(--ratio));}
+      }
     }
   }
 }
@@ -182,9 +200,7 @@ main {position: relative;height: 100vh;}
   }
 }
 /*==CHUYENTRANG=*/
-#list-example{
 
-}
 /*=POPUP DANGKYSOM=*/
 .modal-custom{
   .modal-content{
@@ -221,9 +237,10 @@ main {position: relative;height: 100vh;}
   
 }
 @media (max-width: 540px) {
-  
+  :root {--ratio:0.8;}
 }
 @media (max-width: 414px) {
+  :root {--ratio:0.6;}
   body{background-size: 140%, 180%;}
   .header .header-center a.naptien{max-width: 60%;}
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{width: 16px;}

@@ -121,6 +121,7 @@
   --spacing: 30px;
   --colortablehead: #e4e4e4;
   --bs-gutter-x: 1.5rem;
+  --ratio:1;
 }
 
 .error {
@@ -143,6 +144,10 @@
   color: var(--color1) !important;
 }
 
+#layout {
+  margin-top: calc(116px * var(--ratio));
+}
+
 body {
   font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
@@ -152,7 +157,7 @@ body {
   background-image: url(../images/bg-top.webp), url(../images/bg-footer.webp);
   background-size: 100%;
   background-repeat: no-repeat no-repeat;
-  background-position: top center, bottom center;
+  background-position: center calc(116px * var(--ratio)), bottom center;
 }
 
 * {
@@ -198,7 +203,7 @@ main {
   text-align: center;
   z-index: 15;
   left: 0;
-  top: 10px;
+  top: calc(130px * var(--ratio));
   color: #1d3355;
   -webkit-filter: drop-shadow(0px 0px 1px #ffffff);
           filter: drop-shadow(0px 0px 1px #ffffff);
@@ -345,6 +350,49 @@ main {
           mask-image: -webkit-linear-gradient(-60deg, rgba(255, 255, 255, 0) 40%, #fff 50%, rgba(255, 255, 255, 0) 60%);
   -webkit-animation: laluot linear 2.5s infinite 1s;
   animation: laluot linear 2.5s infinite 1s;
+}
+
+/*===DOWNLOAD DETECH========*/
+.download {
+  background-color: #2d648d;
+  border-bottom: 1px solid #ffffff80;
+}
+
+.download .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .container .left .icongame {
+  width: calc(100px * var(--ratio));
+}
+
+.download .container .left .title-game {
+  color: var(--whitecolor);
+}
+
+.download .container .left .title-game h4 {
+  font-size: calc(160% * var(--ratio));
+}
+
+.download .container .right a img {
+  width: calc(172px * var(--ratio));
 }
 
 /*==Dangkynhanqua*/
@@ -821,7 +869,16 @@ main {
   /*	footer{position: relative;}*/
 }
 
+@media (max-width: 540px) {
+  :root {
+    --ratio:0.8;
+  }
+}
+
 @media (max-width: 414px) {
+  :root {
+    --ratio:0.6;
+  }
   body {
     background-size: 140%, 180%;
   }
