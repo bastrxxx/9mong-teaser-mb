@@ -29,7 +29,7 @@
 
 #myModal .modal-body .close {
   position: absolute;
-  right: -30px;
+  right: 15px;
   top: 0;
   z-index: 999;
   font-size: 2rem;
@@ -145,7 +145,7 @@
 }
 
 #layout {
-  margin-top: calc(116px * var(--ratio));
+  margin-top: calc(124px * var(--ratio));
 }
 
 body {

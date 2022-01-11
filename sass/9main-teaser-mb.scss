@@ -22,7 +22,7 @@ $fontfam2: 'Arima Madurai', Roboto, sans-serif;
 .gold {color: var(--color1) !important;}
 .blue {color: var(--colorlink) !important;}
 .main {color: var(--color1) !important;}
-#layout{margin-top: calc(116px * var(--ratio));}
+#layout{margin-top: calc(124px * var(--ratio));}
 body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position:center calc(116px * var(--ratio)), bottom center;}
 * {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
 a {text-decoration: none;transition: all 0.3s ease-in-out;}
