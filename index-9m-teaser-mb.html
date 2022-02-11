@@ -17,6 +17,15 @@
 </head>
 <body>
 	<div class="wrapper" id="dkLogin">
+		<!----Popup Alphatest-->
+		<div class="modal fade modal-custom" id="alphatestmb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<img class="d-block mw-100" src="images/popup.png" alt="" />
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 
 		<!----Popup Game ra mat-->
 		<div class="modal fade modal-custom" id="gameramat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -28,7 +37,6 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
-
 		<!----Popup Đăng ký sớm-->
 		<div class="modal fade modal-custom" id="dksom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl modal-dialog-centered">
@@ -540,5 +548,10 @@
 					slideShadows: false,
 				},
 			})
+	</script>
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$('#alphatestmb').modal('show');
+		});
 	</script>
 </html>

@@ -827,6 +827,25 @@ main {
   margin-top: 1.5rem;
 }
 
+#alphatestmb .modal-content {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#alphatestmb .modal-content .btn-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/close.png) no-repeat top center;
+  opacity: 1;
+  -webkit-filter: contrast(3);
+          filter: contrast(3);
+  background-size: contain;
+}
+
 /*==FOOTER=*/
 .footer {
   height: auto;
