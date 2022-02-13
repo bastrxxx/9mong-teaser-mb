@@ -23,7 +23,7 @@ $fontfam2: 'Arima Madurai', Roboto, sans-serif;
 .blue {color: var(--colorlink) !important;}
 .main {color: var(--color1) !important;}
 #layout{margin-top: calc(124px * var(--ratio));}
-body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position:center calc(116px * var(--ratio)), bottom center;}
+body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.jpg), url(../images/bg-footer.jpg);background-size: 100%;background-repeat: no-repeat no-repeat;background-position:center calc(116px * var(--ratio)), bottom center;}
 * {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
 a {text-decoration: none;transition: all 0.3s ease-in-out;}
 button {transition: all 0.7s ease-in-out !important;}
@@ -35,7 +35,7 @@ main {position: relative;height: 100vh;}
 .btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;
   i{font-size: 2rem;text-align: left;}
 }
-.offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.webp);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;max-width:65vw;
+.offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.jpg);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;max-width:65vw;
   .btn-close{filter: invert(1);}
   .offcanvas-body{
     .list-group{
@@ -161,7 +161,7 @@ main {position: relative;height: 100vh;}
           &:hover{filter: brightness(120%);}
         }
       }
-      .showlichsu{background:url(../images/vongquay/bg-phanthuong.webp) no-repeat top center;max-width: 100%;height: auto;background-size:contain;
+      .showlichsu{background:url(../images/vongquay/bg-phanthuong.png) no-repeat top center;max-width: 100%;height: auto;background-size:contain;
         .showin{padding: 0.8rem;max-width: 100%;overflow: hidden;
           .table-ls{border-radius:10px;background: rgb(147,43,47);height: 93vw;background:transparent;overflow: hidden;overflow-y: scroll;max-height:616px;
             table{color: #fff;
