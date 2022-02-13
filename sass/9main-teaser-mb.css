@@ -320,10 +320,12 @@ main {
 
 .header .header-center .btnvideo {
   width: 100%;
+  display: block;
 }
 
 .header .header-center .btnvideo img {
   max-width: 100%;
+  display: block;
 }
 
 .header .header-center a.naptien {

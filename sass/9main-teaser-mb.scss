@@ -59,8 +59,8 @@ main {position: relative;height: 100vh;}
   }
 
   .header-center{z-index: 9;position: relative;display: flex;align-items:center;justify-content: center;flex-direction: column;overflow: hidden;
-    .btnvideo{width: 100%;
-      img{max-width: 100%;}
+    .btnvideo{width: 100%;display:block;
+      img{max-width: 100%;display:block;}
     }
     a.naptien{position: relative;max-width: 100%;margin: 0 auto;display: block;
       img{max-width: 100%;}
