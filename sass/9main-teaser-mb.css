@@ -154,7 +154,7 @@ body {
   font-weight: 400;
   color: var(--color2);
   background: #f9fdfe;
-  background-image: url(../images/bg-top.webp), url(../images/bg-footer.webp);
+  background-image: url(../images/bg-top.jpg), url(../images/bg-footer.jpg);
   background-size: 100%;
   background-repeat: no-repeat no-repeat;
   background-position: center calc(116px * var(--ratio)), bottom center;
@@ -221,7 +221,7 @@ main {
 .offcanvas {
   color: var(--whitecolor);
   background-color: #102331;
-  background-image: url(../images/bg-bot.webp);
+  background-image: url(../images/bg-bot.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
@@ -662,7 +662,7 @@ main {
 }
 
 .vongquay .container .frame-ls .showlichsu {
-  background: url(../images/vongquay/bg-phanthuong.webp) no-repeat top center;
+  background: url(../images/vongquay/bg-phanthuong.png) no-repeat top center;
   max-width: 100%;
   height: auto;
   background-size: contain;
