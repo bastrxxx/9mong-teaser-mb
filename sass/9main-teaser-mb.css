@@ -257,6 +257,7 @@ main {
 .header {
   position: relative;
   height: auto;
+  overflow: hidden;
 }
 
 .header ul.menu-top {
@@ -315,6 +316,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .header .header-center .btnvideo {
